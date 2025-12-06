@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pasak Tani</string>
+    <string name="belajar_ui">Belajar Layout</string>
+    <string-array name="jenis_pelanggan_array">
+        <item>Reguler</item>
+        <item>Member</item>
+        <item>VIP</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>

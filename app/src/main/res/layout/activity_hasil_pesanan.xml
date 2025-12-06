@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Konfirmasi Pesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tvNoMeja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Meja : "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvNamaPelanggan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pelanggan : "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTanggalOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal : "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvJamOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam : "
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvJenisPelanggan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Pelanggan : "
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:text="Detail Pesanan:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+        <TableLayout
+            android:id="@+id/tblPesanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:text="Menu"
+                    android:textStyle="bold"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text="Jumlah"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="5dp"/>
+                <TextView
+                    android:text="Harga"
+                    android:textStyle="bold"
+                    android:gravity="end"
+                    android:padding="5dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total : Rp 0"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/tvDiskon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diskon : Rp 0"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalAkhir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Akhir : Rp 0"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Pesanan"/>
+
+            <Button
+                android:id="@+id/btnKonfirmasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Konfirmasi"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

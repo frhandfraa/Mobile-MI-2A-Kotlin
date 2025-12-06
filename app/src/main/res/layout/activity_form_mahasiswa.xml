@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    tools:context=".widgets.FormMahasiswaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Pendaftaran Mahasiswa"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- NIM -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etNIM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="ex: 24xxxxxxxx" />
+
+        <!-- Nama -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex: Joko Widodo" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="ex: address@email.com" />
+
+        <!-- No HP -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Handphone"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/etHandphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="ex: 0812xxxxxxxx" />
+
+        <!-- Jurusan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jurusan"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:id="@+id/spJurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Prodi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prodi"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:id="@+id/spProdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Jenis Kelamin -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:layout_marginTop="10dp" />
+
+        <RadioGroup
+            android:id="@+id/rgJK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pria" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wanita" />
+        </RadioGroup>
+
+        <!-- Hobi -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobi"
+            android:layout_marginTop="10dp" />
+
+        <CheckBox
+            android:id="@+id/chkBaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Membaca" />
+
+        <CheckBox
+            android:id="@+id/chkTravelling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travelling" />
+
+        <CheckBox
+            android:id="@+id/chkCoding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coding" />
+
+        <!-- Tanggal Lahir -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvTglLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:padding="10dp"
+            android:text="Klik untuk pilih tanggal" />
+
+        <!-- Jam -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/etJam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:padding="10dp"
+            android:text="Klik untuk pilih jam" />
+
+        <!-- Tombol -->
+        <Button
+            android:id="@+id/btnKirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:layout_marginTop="15dp" />
+
+        <!-- Hasil -->
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil akan ditampilkan di sini"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+</ScrollView>

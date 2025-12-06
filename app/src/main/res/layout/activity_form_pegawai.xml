@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".widgets.FormPegawaiActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Judul -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form Pegawai"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- NIP -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIP"/>
+        <EditText
+            android:id="@+id/etNIP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="ex: 2400xxxxxx"/>
+
+        <!-- Nama -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex: Joko Widodo"/>
+
+        <!-- Tempat Lahir -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempat Lahir"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/etTempatLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex: Padang"/>
+
+        <!-- Tanggal Lahir -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/tvTglLahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp"
+            android:hint="Pilih tanggal lahir"/>
+
+        <!-- Jam Masuk -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jam Masuk"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/etJam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp"
+            android:hint="Pilih jam masuk"/>
+
+        <!-- Umur -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Umur"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/etUmur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ex: 30 Tahun"/>
+
+        <!-- NIK -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIK"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/etNIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="ex: 137xxxxxxxxxxxxxx"/>
+
+        <!-- Nomor KK -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor KK"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/etKK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="ex: 13xxxxxxxxxxxxxxx"/>
+
+        <!-- Tombol Daftar -->
+        <Button
+            android:id="@+id/btnKirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Hasil -->
+        <TextView
+            android:id="@+id/tvHasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil akan tampil di sini"
+            android:layout_marginTop="15dp"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+</ScrollView>

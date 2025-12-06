@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TableLayoutActivity">
+    <TableRow>
+        <TextView
+            android:text="Nama Lengkap : "
+            android:textSize="15sp"
+            android:layout_column="0"
+            />
+        <TextView
+            android:text="Farhan eDefra Jaya Kusuma"
+            android:textSize="15sp"
+            android:layout_column="1"
+
+            />
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="NIM : "
+            android:textSize="15sp"
+            android:layout_column="0"
+            />
+        <TextView
+            android:text="2401092006"
+            android:textSize="15sp"
+            android:layout_column="1"
+            />
+    </TableRow>
+    <TableRow>
+            <TextView
+                android:text="Email: "
+                android:textSize="15sp"
+                android:layout_column="0"
+                />
+            <TextView
+                android:text="Jayakusumabkt2309@gmail.com"
+                android:textSize="15sp"
+                android:layout_column="1"
+                />.
+        </TableRow>
+    <TableRow>
+        <Button
+            android:text="Simpan"
+            android:layout_column="0"
+            />
+    </TableRow>
+
+  </TableLayout>
